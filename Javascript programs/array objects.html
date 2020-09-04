@@ -1,0 +1,37 @@
+
+<!-- ARRAY OBJECTS -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Objects</title>
+  </head>
+  <body>
+    <script>
+      let array = ["Java", "Script", "Program"];
+      document.write("<p>Array: " + array + "</p>");
+
+      document.write("<p>Array toString(): " + array.toString() + "</p>");
+
+      array.push("programming");
+      document.write("<p>Array after push(): " + array + "</p>");
+
+      array.pop();
+      document.write("<p>Array after pop(): " + array + "</p>");
+
+      array.unshift("This is");
+      document.write("<p>Array after unshift(): " + array + "</p>");
+
+      array.shift("This is");
+      document.write("<p>Array after shift(): " + array + "</p>");
+      
+      document.write("<p>Index of Script: " + array.indexOf("Script") + "</p>");
+
+      document.write("<p>Sorted array: " + array.sort() + "</p>");
+
+      document.write("<p>Array after slicing: " + array.slice(1) + "</p>");
+
+      document.write("<p>Array after splicing: " + array.splice(0, 2) + "</p>");
+    </script>
+  </body>
+</html>
