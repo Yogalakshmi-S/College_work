@@ -1,0 +1,27 @@
+<!-- Javascript program to get input value using prompt and display the result using alert -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Factorial of given number</title>
+</head>
+<body>
+	<h1>Factorial Program</h1>
+	<button onclick="runProgram()">Click here</button>
+	<script>
+		function factorial(n){
+			if (n === 1){
+				return 1;
+			}
+			return n * factorial(n-1);
+		}
+		function runProgram(){
+			const number = parseInt(prompt("Enter a number here"))
+			const result = factorial(number);
+			if (confirm("Press ok to continue")) {
+				alert(number + "! = " + result);
+			}
+		}
+	</script>
+</body>
+</html>
