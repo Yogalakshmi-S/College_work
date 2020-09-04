@@ -1,0 +1,36 @@
+
+<!-- Javascript program to get input value using prompt and display the result using alert -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fibonacci Series</title>
+</head>
+<body>
+	<h1>Fibonacci Series</h1>
+	<button onclick="runProgram()">Click here</button>
+	<script>
+		function fibo(n){
+			let string = "";
+			let first = 0;
+			let second = 1;
+			let sum = 0;
+			for (let i = 1; i <= n; i++){
+				string += first + " ";
+				sum = first + second;
+				first = second;
+				second = sum;
+			}
+			return string;
+		}
+		
+		function runProgram(){
+			const num = parseInt(prompt("Enter a number here"))
+			const result = fibo(num);
+			if (confirm("Press Ok to continue")){
+				alert("Fibonacci Series: " + result);
+			}
+		}
+	</script>
+</body>
+</html>
