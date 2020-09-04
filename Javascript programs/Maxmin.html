@@ -1,0 +1,40 @@
+
+<!-- Javascript program to find and print the largest and smallest values of an array -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Find Small and Large number of given array</title>
+  </head>
+  <body>
+    <script>
+      const size = parseInt(prompt("Enter the size of the array"));
+      const array = [];
+      let min, max;
+
+      for (let i = 0; i < size; i++) {
+        array[i] = parseInt(
+          prompt("Enter element " + (i + 1) + " of array here")
+        );
+      }
+
+      min = array[0];
+      max = array[0];
+
+      for (let i = 0; i < size; i++) {
+        if (array[i] < min) {
+          min = array[i];
+        }
+      }
+
+      for (let i = 0; i < size; i++) {
+        if (array[i] > max) {
+          max = array[i];
+        }
+      }
+
+      alert("Smallest number: " + min + "   Largest number: " + max);
+      
+    </script>
+  </body>
+</html>
